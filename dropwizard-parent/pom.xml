@@ -153,36 +153,36 @@
             </activation>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-compiler-plugin</artifactId>
-                        <configuration>
-                            <debug>true</debug>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.eclipse.m2e</groupId>
-                        <artifactId>lifecycle-mapping</artifactId>
-                        <configuration>
-                            <lifecycleMappingMetadata>
-                                <pluginExecutions>
-                                    <pluginExecution>
-                                        <pluginExecutionFilter>
-                                            <groupId>org.simplify4u.plugins</groupId>
-                                            <artifactId>pgpverify-maven-plugin</artifactId>
-                                            <version>${pgpverify-maven-plugin.version}</version>
-                                            <goals>
-                                                <goal>check</goal>
-                                            </goals>
-                                        </pluginExecutionFilter>
-                                        <action>
-                                            <ignore />
-                                        </action>
-                                    </pluginExecution>
-                                </pluginExecutions>
-                            </lifecycleMappingMetadata>
-                        </configuration>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                        <configuration>-->
+<!--                            <debug>true</debug>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.eclipse.m2e</groupId>-->
+<!--                        <artifactId>lifecycle-mapping</artifactId>-->
+<!--                        <configuration>-->
+<!--                            <lifecycleMappingMetadata>-->
+<!--                                <pluginExecutions>-->
+<!--                                    <pluginExecution>-->
+<!--                                        <pluginExecutionFilter>-->
+<!--                                            <groupId>org.simplify4u.plugins</groupId>-->
+<!--                                            <artifactId>pgpverify-maven-plugin</artifactId>-->
+<!--                                            <version>${pgpverify-maven-plugin.version}</version>-->
+<!--                                            <goals>-->
+<!--                                                <goal>check</goal>-->
+<!--                                            </goals>-->
+<!--                                        </pluginExecutionFilter>-->
+<!--                                        <action>-->
+<!--                                            <ignore />-->
+<!--                                        </action>-->
+<!--                                    </pluginExecution>-->
+<!--                                </pluginExecutions>-->
+<!--                            </lifecycleMappingMetadata>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
                 </plugins>
             </build>
         </profile>
@@ -311,20 +311,20 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.simplify4u.plugins</groupId>
-                <artifactId>pgpverify-maven-plugin</artifactId>
-                <configuration>
-                    <quiet>true</quiet>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.simplify4u.plugins</groupId>-->
+<!--                <artifactId>pgpverify-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <quiet>true</quiet>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>check</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 

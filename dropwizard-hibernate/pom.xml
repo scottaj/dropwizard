@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>dropwizard-hibernate</artifactId>
+    <version>2.0.5-campspot-fork</version>
     <name>Dropwizard Hibernate Support</name>
 
     <dependencies>
