@@ -75,14 +75,17 @@ public class UnitOfWorkAspect {
             logger.info("Reusing existing session");
             sessionCreated = false;
         } else {
-            Session session = sessionFactory.openSession();
-            sessionCreated = true;
+            Session session = null;
             try {
+                session = sessionFactory.openSession();
+                sessionCreated = true;
                 setContext(unitOfWork, session);
                 configureSession();
                 beginTransaction(unitOfWork, session);
             } catch (Throwable th) {
-                session.close();
+                if (session != null) {
+                    session.close();
+                }
                 clearContext();
                 throw th;
             }
